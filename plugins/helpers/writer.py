@@ -71,7 +71,7 @@ class DataWriter:
         if output_params.write_csv:
             self.csv = True
             self.csv_writer = CsvWriter()
-            self.csv_writer.CreateCsvFile(os.path.join(self.output_path, name + ".csv"))
+            self.csv_writer.CreateCsvFile(os.path.join(self.output_path, name + ".tsv"))
         if output_params.write_xlsx:
             self.xlsx = True
             self.xlsx_writer = output_params.xlsx_writer
